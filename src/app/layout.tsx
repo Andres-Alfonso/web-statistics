@@ -1,3 +1,4 @@
+import Navbar from '@/components/header/Navbar';
 import '../app/globals.css';
 
 export default function RootLayout({
@@ -7,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='justify-center'>{children}</body>
+      <body className='justify-center'><Navbar/>{children}</body>
     </html>
   )
 }
